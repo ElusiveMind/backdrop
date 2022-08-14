@@ -479,6 +479,8 @@ function hook_layout_load_by_router_item_alter(&$layouts, $router_item) {
  * @see hook_block_info_alter()
  */
 function hook_block_info() {
+  $blocks = array();
+  
   $blocks['syndicate'] = array(
     'info' => t('Syndicate'),
     'description' => t('An RSS icon linking to the feed for the current page (if any).'),
